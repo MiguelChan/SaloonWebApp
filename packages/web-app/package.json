@@ -3,6 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@fontsource/roboto": "^4.5.1",
+    "@mui/icons-material": "^5.2.5",
+    "@mui/material": "^5.2.8",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
@@ -24,15 +29,29 @@
     "lint": "eslint --ext .ts,.tsx ./src",
     "lint:fix": "eslint . --ext .ts,.tsx ./src --fix",
     "test:nowatch": "react-app-rewired test --watchAll=false",
-    "release": "npm run-script lint && npm run-script test:nowatch && npm run-script build"
+    "release": "export CI=true && npm run-script lint && npm run-script test:nowatch && npm run-script build",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
       "react-app/jest"
     ],
-    "plugins": [],
-    "rules": {}
+    "plugins": [
+    ],
+    "rules": {
+    },
+    "overrides": [
+      {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      }
+    ]
   },
   "browserslist": {
     "production": [
@@ -47,6 +66,15 @@
     ]
   },
   "devDependencies": {
-    "react-app-rewired": "^2.1.11"
+    "@storybook/addon-actions": "^6.4.12",
+    "@storybook/addon-essentials": "^6.4.12",
+    "@storybook/addon-links": "^6.4.12",
+    "@storybook/builder-webpack5": "^6.4.12",
+    "@storybook/manager-webpack5": "^6.4.12",
+    "@storybook/node-logger": "^6.4.12",
+    "@storybook/preset-create-react-app": "^4.0.0",
+    "@storybook/react": "^6.4.12",
+    "react-app-rewired": "^2.1.11",
+    "webpack": "^5.66.0"
   }
 }
