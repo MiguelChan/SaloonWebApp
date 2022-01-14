@@ -1,0 +1,47 @@
+{
+  "include": [
+    "src/**/*",
+    "tst/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "build"
+  ],
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "commonjs",
+    "outDir": "./build",
+    "strict": true,
+    "esModuleInterop": true,
+    "inlineSourceMap": true,
+    "lib": [
+      "esnext"
+    ],
+    "types": [
+      "node",
+      "jest",
+      "reflect-metadata"
+    ],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "paths": {
+      "controllers": [
+        "./src/controllers/index"
+      ],
+      "routes": [
+        "./src/routes/index"
+      ],
+      "utils": [
+        "./src/utils/index"
+      ]
+    },
+    "plugins": [
+      {
+        "transform": "@zerollup/ts-transform-paths",
+        "exclude": ["*"]
+      }
+    ]
+  }
+}
