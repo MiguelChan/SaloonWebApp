@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppAppBar Should match snapshot 1`] = `
+<div>
+  <div>
+    <header
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed css-1hc7nu0-MuiPaper-root-MuiAppBar-root"
+    >
+      <div
+        class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-aqslzj-MuiToolbar-root"
+      >
+        <div
+          class="MuiBox-root css-1rr4qq7"
+        />
+        <a
+          class="MuiTypography-root MuiTypography-h6 MuiLink-root MuiLink-underlineNone css-2r3fq0-MuiTypography-root-MuiLink-root"
+          href="#"
+        >
+          Lashair by Samy
+        </a>
+        <div
+          class="MuiBox-root css-1j9bsaa"
+        >
+          <a
+            class="MuiTypography-root MuiTypography-h6 MuiLink-root MuiLink-underlineNone css-1we74st-MuiTypography-root-MuiLink-root"
+            href="#"
+          >
+            Iniciar Sesion
+          </a>
+          <a
+            class="MuiTypography-root MuiTypography-h6 MuiLink-root MuiLink-underlineNone css-1apndo0-MuiTypography-root-MuiLink-root"
+            href="#"
+          >
+            Registrarse
+          </a>
+        </div>
+      </div>
+    </header>
+    <div
+      class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-gppu2o-MuiToolbar-root"
+    />
+  </div>
+</div>
+`;
