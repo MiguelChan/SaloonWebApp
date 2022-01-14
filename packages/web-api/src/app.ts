@@ -5,6 +5,7 @@ import * as winston from 'winston';
 import * as expressWinston from 'express-winston';
 import cors from 'cors';
 import debug from 'debug';
+import path from 'path';
 import { InversifyContainer } from 'utils';
 import { CommonRoutesConfig } from './routes/CommonRoutesConfig';
 
@@ -65,6 +66,17 @@ export class SaloonApplication {
         debugLog(`Configuring Route: ${currentRoute.getName()}`);
         currentRoute.configureRoutes();
       });
+
+      if (process.env.USE_STATIC_ASSETS) {
+        const staticAssetsPath = path.join('build/website');
+        app.use(express.static(staticAssetsPath));
+    
+        app.get('*', (req: express.Request, res: express.Response) => {
+          const resolvedPath = path.resolve(staticAssetsPath, 'index.html');
+          debugLog(`ResolvedPath: ${resolvedPath}`);
+          res.sendFile(resolvedPath);
+        });
+      }
     });
   }
 }
