@@ -6,7 +6,7 @@
   },
   "scripts": {
     "release:install": "lerna bootstrap",
-    "release": "lerna exec --concurrency 1 -- npm run release",
+    "release": "lerna exec --concurrency 2 -- npm run release",
     "lint:fix": "lerna exec --concurrency 1 -- npm run lint:fix"
   }
 }
