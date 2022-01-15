@@ -1,10 +1,16 @@
 import * as React from 'react';
-import { Theme } from '@mui/material/styles';
+import { Theme, useTheme } from '@mui/material/styles';
 import { SxProps } from '@mui/system';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import { Typography } from 'Components/Blocks';
+import { ProductValue } from '@mchanc/shared-library';
+import productCurvyLines from 'Images/productCurvyLines.png';
+
+export interface ProductValuesProps {
+  productValues: ProductValue[];
+}
 
 const item: SxProps<Theme> = {
   display: 'flex',
@@ -13,7 +19,68 @@ const item: SxProps<Theme> = {
   px: 5,
 };
 
-function ProductValues() {
+const ProductValues: React.FunctionComponent<ProductValuesProps> = ({
+  productValues,
+}) => {
+
+  const currentTheme = useTheme();
+
+  const MAX_NUMBER_OF_ELEMENTS_PER_ROW = 3;
+
+  const renderProductValues = (): React.ReactNode => {
+    const maxNumberOfRows = Math.ceil(productValues.length / MAX_NUMBER_OF_ELEMENTS_PER_ROW);
+    const gridsToDisplay = [];
+    for (let i = 0; i < maxNumberOfRows; i++) {
+      const currentRows: any[] = [];
+      for (let j = 0; j < MAX_NUMBER_OF_ELEMENTS_PER_ROW; j++) {
+        const index: number = i * MAX_NUMBER_OF_ELEMENTS_PER_ROW + j;
+        const currentProductValue = productValues[index];
+        const gridSection = renderGridSection(currentProductValue, index);
+        currentRows.push(gridSection);
+      }
+      const gridSection = renderGridContainer(currentRows, i + 1);
+      gridsToDisplay.push(gridSection);
+    }
+
+    return (
+      <Grid container>
+        {gridsToDisplay}
+      </Grid>
+    );
+  }
+
+  const renderGridSection = (productValue: ProductValue, containerId: number): React.ReactNode => (
+    <Grid item xs={12} md={4} key={`grid-section-${containerId}`}>
+      <Box sx={item}>
+        <Box
+          component="img"
+          src={productValue.imageUrl}
+          alt={productValue.altTitle}
+          width='100%'
+          height='auto'
+          sx={{ height: 'auto' }}
+        />
+        <Typography variant="h6" sx={{ my: 5 }}>
+          {productValue.title}
+        </Typography>
+        <Typography variant="h5">
+          {productValue.description}
+        </Typography>
+      </Box>
+    </Grid>
+  );
+
+  const renderGridContainer = (children: React.ReactNode, containerId: number): React.ReactNode => (
+    <Grid 
+      container 
+      spacing={5} 
+      sx={{marginBottom: currentTheme.spacing(5)}}
+      key={`row-id-${containerId}`}
+    >
+      {children}
+    </Grid>
+  );
+
   return (
     <Box
       component="section"
@@ -22,69 +89,13 @@ function ProductValues() {
       <Container sx={{ mt: 15, mb: 30, display: 'flex', position: 'relative' }}>
         <Box
           component="img"
-          src="/static/themes/onepirate/productCurvyLines.png"
+          src={productCurvyLines}
           alt="curvy lines"
+          height='100%'
+          width='100%'
           sx={{ pointerEvents: 'none', position: 'absolute', top: -180 }}
         />
-        <Grid container spacing={5}>
-          <Grid item xs={12} md={4}>
-            <Box sx={item}>
-              <Box
-                component="img"
-                src="/static/themes/onepirate/productValues1.svg"
-                alt="suitcase"
-                sx={{ height: 55 }}
-              />
-              <Typography variant="h6" sx={{ my: 5 }}>
-                The best luxury hotels
-              </Typography>
-              <Typography variant="h5">
-                {
-                  'From the latest trendy boutique hotel to the iconic palace with XXL pool'
-                }
-                {
-                  ', go for a mini-vacation just a few subway stops away from your home.'
-                }
-              </Typography>
-            </Box>
-          </Grid>
-          <Grid item xs={12} md={4}>
-            <Box sx={item}>
-              <Box
-                component="img"
-                src="/static/themes/onepirate/productValues2.svg"
-                alt="graph"
-                sx={{ height: 55 }}
-              />
-              <Typography variant="h6" sx={{ my: 5 }}>
-                New experiences
-              </Typography>
-              <Typography variant="h5">
-                {
-                  'Privatize a pool, take a Japanese bath or wake up in 900m2 of garden… '
-                }
-                {'your Sundays will not be alike.'}
-              </Typography>
-            </Box>
-          </Grid>
-          <Grid item xs={12} md={4}>
-            <Box sx={item}>
-              <Box
-                component="img"
-                src="/static/themes/onepirate/productValues3.svg"
-                alt="clock"
-                sx={{ height: 55 }}
-              />
-              <Typography variant="h6" sx={{ my: 5 }}>
-                Exclusive rates
-              </Typography>
-              <Typography variant="h5">
-                {'By registering, you will access specially negotiated rates '}
-                {'that you will not find anywhere else.'}
-              </Typography>
-            </Box>
-          </Grid>
-        </Grid>
+        {renderProductValues()}
       </Container>
     </Box>
   );

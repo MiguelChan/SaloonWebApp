@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductHero Should match the Snapshot 1`] = `
+<div>
+  <section
+    class="css-19wmqo9"
+  >
+    <div
+      class="MuiContainer-root MuiContainer-maxWidthLg css-p7auv0-MuiContainer-root"
+    >
+      <img
+        alt="wonder"
+        height="80"
+        src="productHeroWonder.png"
+        width="147"
+      />
+      <img
+        alt="increase priority"
+        src="https://images.unsplash.com/photo-1534854638093-bada1813ca19?auto=format&fit=crop&w=1400&q=80"
+        style="display: none;"
+      />
+      <h1
+        class="MuiTypography-root MuiTypography-h2 MuiTypography-alignCenter css-1ekozhk-MuiTypography-root"
+      >
+        Lleva tu belleza aun mas lejos
+        <span
+          class="Typography-markedH2Center-1"
+        />
+      </h1>
+      <h3
+        class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter css-mp1pa5-MuiTypography-root"
+      >
+        Disfruta de nuestros atractivos servicios
+      </h3>
+      <a
+        class="MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButtonBase-root css-18hdeun-MuiButtonBase-root-MuiButton-root"
+        href="/premium-themes/onepirate/sign-up/"
+        tabindex="0"
+      >
+        Registrarse
+        <span
+          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+        />
+      </a>
+      <p
+        class="MuiTypography-root MuiTypography-body2 css-3x4rdf-MuiTypography-root"
+      >
+        Descubre la experiencia con Samy
+      </p>
+      <div
+        class="MuiBox-root css-wvalkt"
+      />
+      <div
+        class="MuiBox-root css-qzsf4t"
+      />
+      <div
+        class="MuiBox-root css-426bbn"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+          data-testid="ArrowDownwardIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="m20 12-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+          />
+        </svg>
+      </div>
+    </div>
+  </section>
+</div>
+`;

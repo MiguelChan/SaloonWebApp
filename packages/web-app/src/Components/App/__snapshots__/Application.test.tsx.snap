@@ -19,7 +19,7 @@ exports[`Application Should render the Application 1`] = `
           Lashair by Samy
         </a>
         <div
-          class="MuiBox-root css-1j9bsaa"
+          class="MuiBox-root css-urdvyo"
         >
           <a
             class="MuiTypography-root MuiTypography-h6 MuiLink-root MuiLink-underlineNone css-1p3dz7x-MuiTypography-root-MuiLink-root"
@@ -49,7 +49,7 @@ exports[`Application Should render the Application 1`] = `
       <img
         alt="wonder"
         height="80"
-        src="/static/themes/onepirate/productHeroWonder.png"
+        src="productHeroWonder.png"
         width="147"
       />
       <img
@@ -60,7 +60,7 @@ exports[`Application Should render the Application 1`] = `
       <h1
         class="MuiTypography-root MuiTypography-h2 MuiTypography-alignCenter css-tfrjig-MuiTypography-root"
       >
-        Upgrade your Sundays
+        Lleva tu belleza aun mas lejos
         <span
           class="Typography-markedH2Center-1"
         />
@@ -68,14 +68,14 @@ exports[`Application Should render the Application 1`] = `
       <h3
         class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter css-kx15kg-MuiTypography-root"
       >
-        Enjoy secret offers up to -70% off the best luxury hotels every Sunday.
+        Disfruta de nuestros atractivos servicios
       </h3>
       <a
-        class="MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButtonBase-root css-18gjhwn-MuiButtonBase-root-MuiButton-root"
+        class="MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButtonBase-root css-1nthm7c-MuiButtonBase-root-MuiButton-root"
         href="/premium-themes/onepirate/sign-up/"
         tabindex="0"
       >
-        Register
+        Registrarse
         <span
           class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
         />
@@ -83,7 +83,7 @@ exports[`Application Should render the Application 1`] = `
       <p
         class="MuiTypography-root MuiTypography-body2 css-g3bjyg-MuiTypography-root"
       >
-        Discover the experience
+        Descubre la experiencia con Samy
       </p>
       <div
         class="MuiBox-root css-wvalkt"
@@ -91,11 +91,21 @@ exports[`Application Should render the Application 1`] = `
       <div
         class="MuiBox-root css-qzsf4t"
       />
-      <img
-        alt="arrow down"
+      <div
         class="MuiBox-root css-426bbn"
-        src="/static/themes/onepirate/productHeroArrowDown.png"
-      />
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+          data-testid="ArrowDownwardIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="m20 12-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+          />
+        </svg>
+      </div>
     </div>
   </section>
   <section
@@ -106,82 +116,229 @@ exports[`Application Should render the Application 1`] = `
     >
       <img
         alt="curvy lines"
-        class="MuiBox-root css-1epxpy3"
-        src="/static/themes/onepirate/productCurvyLines.png"
+        class="MuiBox-root css-1e0ag7j"
+        src="productCurvyLines.png"
       />
       <div
-        class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 css-1ld3b9g-MuiGrid-root"
+        class="MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
       >
         <div
-          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-1lj5egr-MuiGrid-root"
+          class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 css-v9705b-MuiGrid-root"
         >
           <div
-            class="MuiBox-root css-19zp38f"
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-1lj5egr-MuiGrid-root"
           >
-            <img
-              alt="suitcase"
-              class="MuiBox-root css-1k9bk4"
-              src="/static/themes/onepirate/productValues1.svg"
-            />
-            <h2
-              class="MuiTypography-root MuiTypography-h6 css-o7kk83-MuiTypography-root"
+            <div
+              class="MuiBox-root css-19zp38f"
             >
-              The best luxury hotels
-            </h2>
-            <h3
-              class="MuiTypography-root MuiTypography-h5 css-ksffm-MuiTypography-root"
+              <img
+                alt="Test + 0"
+                class="MuiBox-root css-ducv57"
+                src="https://source.unsplash.com/random"
+              />
+              <h2
+                class="MuiTypography-root MuiTypography-h6 css-o7kk83-MuiTypography-root"
+              >
+                Another Title: 0
+              </h2>
+              <h3
+                class="MuiTypography-root MuiTypography-h5 css-ksffm-MuiTypography-root"
+              >
+                This is some description for 0
+              </h3>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-1lj5egr-MuiGrid-root"
+          >
+            <div
+              class="MuiBox-root css-19zp38f"
             >
-              From the latest trendy boutique hotel to the iconic palace with XXL pool
-              , go for a mini-vacation just a few subway stops away from your home.
-            </h3>
+              <img
+                alt="Test + 1"
+                class="MuiBox-root css-ducv57"
+                src="https://source.unsplash.com/random"
+              />
+              <h2
+                class="MuiTypography-root MuiTypography-h6 css-o7kk83-MuiTypography-root"
+              >
+                Another Title: 1
+              </h2>
+              <h3
+                class="MuiTypography-root MuiTypography-h5 css-ksffm-MuiTypography-root"
+              >
+                This is some description for 1
+              </h3>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-1lj5egr-MuiGrid-root"
+          >
+            <div
+              class="MuiBox-root css-19zp38f"
+            >
+              <img
+                alt="Test + 2"
+                class="MuiBox-root css-ducv57"
+                src="https://source.unsplash.com/random"
+              />
+              <h2
+                class="MuiTypography-root MuiTypography-h6 css-o7kk83-MuiTypography-root"
+              >
+                Another Title: 2
+              </h2>
+              <h3
+                class="MuiTypography-root MuiTypography-h5 css-ksffm-MuiTypography-root"
+              >
+                This is some description for 2
+              </h3>
+            </div>
           </div>
         </div>
         <div
-          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-1lj5egr-MuiGrid-root"
+          class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 css-v9705b-MuiGrid-root"
         >
           <div
-            class="MuiBox-root css-19zp38f"
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-1lj5egr-MuiGrid-root"
           >
-            <img
-              alt="graph"
-              class="MuiBox-root css-1k9bk4"
-              src="/static/themes/onepirate/productValues2.svg"
-            />
-            <h2
-              class="MuiTypography-root MuiTypography-h6 css-o7kk83-MuiTypography-root"
+            <div
+              class="MuiBox-root css-19zp38f"
             >
-              New experiences
-            </h2>
-            <h3
-              class="MuiTypography-root MuiTypography-h5 css-ksffm-MuiTypography-root"
+              <img
+                alt="Test + 3"
+                class="MuiBox-root css-ducv57"
+                src="https://source.unsplash.com/random"
+              />
+              <h2
+                class="MuiTypography-root MuiTypography-h6 css-o7kk83-MuiTypography-root"
+              >
+                Another Title: 3
+              </h2>
+              <h3
+                class="MuiTypography-root MuiTypography-h5 css-ksffm-MuiTypography-root"
+              >
+                This is some description for 3
+              </h3>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-1lj5egr-MuiGrid-root"
+          >
+            <div
+              class="MuiBox-root css-19zp38f"
             >
-              Privatize a pool, take a Japanese bath or wake up in 900m2 of garden… 
-              your Sundays will not be alike.
-            </h3>
+              <img
+                alt="Test + 4"
+                class="MuiBox-root css-ducv57"
+                src="https://source.unsplash.com/random"
+              />
+              <h2
+                class="MuiTypography-root MuiTypography-h6 css-o7kk83-MuiTypography-root"
+              >
+                Another Title: 4
+              </h2>
+              <h3
+                class="MuiTypography-root MuiTypography-h5 css-ksffm-MuiTypography-root"
+              >
+                This is some description for 4
+              </h3>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-1lj5egr-MuiGrid-root"
+          >
+            <div
+              class="MuiBox-root css-19zp38f"
+            >
+              <img
+                alt="Test + 5"
+                class="MuiBox-root css-ducv57"
+                src="https://source.unsplash.com/random"
+              />
+              <h2
+                class="MuiTypography-root MuiTypography-h6 css-o7kk83-MuiTypography-root"
+              >
+                Another Title: 5
+              </h2>
+              <h3
+                class="MuiTypography-root MuiTypography-h5 css-ksffm-MuiTypography-root"
+              >
+                This is some description for 5
+              </h3>
+            </div>
           </div>
         </div>
         <div
-          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-1lj5egr-MuiGrid-root"
+          class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 css-v9705b-MuiGrid-root"
         >
           <div
-            class="MuiBox-root css-19zp38f"
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-1lj5egr-MuiGrid-root"
           >
-            <img
-              alt="clock"
-              class="MuiBox-root css-1k9bk4"
-              src="/static/themes/onepirate/productValues3.svg"
-            />
-            <h2
-              class="MuiTypography-root MuiTypography-h6 css-o7kk83-MuiTypography-root"
+            <div
+              class="MuiBox-root css-19zp38f"
             >
-              Exclusive rates
-            </h2>
-            <h3
-              class="MuiTypography-root MuiTypography-h5 css-ksffm-MuiTypography-root"
+              <img
+                alt="Test + 6"
+                class="MuiBox-root css-ducv57"
+                src="https://source.unsplash.com/random"
+              />
+              <h2
+                class="MuiTypography-root MuiTypography-h6 css-o7kk83-MuiTypography-root"
+              >
+                Another Title: 6
+              </h2>
+              <h3
+                class="MuiTypography-root MuiTypography-h5 css-ksffm-MuiTypography-root"
+              >
+                This is some description for 6
+              </h3>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-1lj5egr-MuiGrid-root"
+          >
+            <div
+              class="MuiBox-root css-19zp38f"
             >
-              By registering, you will access specially negotiated rates 
-              that you will not find anywhere else.
-            </h3>
+              <img
+                alt="Test + 7"
+                class="MuiBox-root css-ducv57"
+                src="https://source.unsplash.com/random"
+              />
+              <h2
+                class="MuiTypography-root MuiTypography-h6 css-o7kk83-MuiTypography-root"
+              >
+                Another Title: 7
+              </h2>
+              <h3
+                class="MuiTypography-root MuiTypography-h5 css-ksffm-MuiTypography-root"
+              >
+                This is some description for 7
+              </h3>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-1lj5egr-MuiGrid-root"
+          >
+            <div
+              class="MuiBox-root css-19zp38f"
+            >
+              <img
+                alt="Test + 8"
+                class="MuiBox-root css-ducv57"
+                src="https://source.unsplash.com/random"
+              />
+              <h2
+                class="MuiTypography-root MuiTypography-h6 css-o7kk83-MuiTypography-root"
+              >
+                Another Title: 8
+              </h2>
+              <h3
+                class="MuiTypography-root MuiTypography-h5 css-ksffm-MuiTypography-root"
+              >
+                This is some description for 8
+              </h3>
+            </div>
           </div>
         </div>
       </div>
@@ -193,7 +350,7 @@ exports[`Application Should render the Application 1`] = `
     <h2
       class="MuiTypography-root MuiTypography-h4 MuiTypography-alignCenter css-x9qmap-MuiTypography-root"
     >
-      For all tastes and all desires
+      Vea nuestros productos y servicios
       <span
         class="Typography-markedH4Center-3"
       />
@@ -203,152 +360,12 @@ exports[`Application Should render the Application 1`] = `
     >
       <button
         class="MuiButtonBase-root css-17b4s68-MuiButtonBase-root"
-        style="width: 40%;"
-        tabindex="0"
-        type="button"
-      >
-        <div
-          class="MuiBox-root css-1tro73s"
-        />
-        <div
-          class="imageBackdrop css-myflv1"
-        />
-        <div
-          class="MuiBox-root css-1yrzk2j"
-        >
-          <h3
-            class="MuiTypography-root MuiTypography-h6 imageTitle css-1v7dj15-MuiTypography-root"
-          >
-            Snorkeling
-            <div
-              class="imageMarked"
-            />
-          </h3>
-        </div>
-        <span
-          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-        />
-      </button>
-      <button
-        class="MuiButtonBase-root css-17b4s68-MuiButtonBase-root"
-        style="width: 20%;"
-        tabindex="0"
-        type="button"
-      >
-        <div
-          class="MuiBox-root css-1t6tx54"
-        />
-        <div
-          class="imageBackdrop css-myflv1"
-        />
-        <div
-          class="MuiBox-root css-1yrzk2j"
-        >
-          <h3
-            class="MuiTypography-root MuiTypography-h6 imageTitle css-1v7dj15-MuiTypography-root"
-          >
-            Massage
-            <div
-              class="imageMarked"
-            />
-          </h3>
-        </div>
-        <span
-          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-        />
-      </button>
-      <button
-        class="MuiButtonBase-root css-17b4s68-MuiButtonBase-root"
-        style="width: 40%;"
-        tabindex="0"
-        type="button"
-      >
-        <div
-          class="MuiBox-root css-5q03f0"
-        />
-        <div
-          class="imageBackdrop css-myflv1"
-        />
-        <div
-          class="MuiBox-root css-1yrzk2j"
-        >
-          <h3
-            class="MuiTypography-root MuiTypography-h6 imageTitle css-1v7dj15-MuiTypography-root"
-          >
-            Hiking
-            <div
-              class="imageMarked"
-            />
-          </h3>
-        </div>
-        <span
-          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-        />
-      </button>
-      <button
-        class="MuiButtonBase-root css-17b4s68-MuiButtonBase-root"
-        style="width: 38%;"
-        tabindex="0"
-        type="button"
-      >
-        <div
-          class="MuiBox-root css-1wuc5bb"
-        />
-        <div
-          class="imageBackdrop css-myflv1"
-        />
-        <div
-          class="MuiBox-root css-1yrzk2j"
-        >
-          <h3
-            class="MuiTypography-root MuiTypography-h6 imageTitle css-1v7dj15-MuiTypography-root"
-          >
-            Tour
-            <div
-              class="imageMarked"
-            />
-          </h3>
-        </div>
-        <span
-          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-        />
-      </button>
-      <button
-        class="MuiButtonBase-root css-17b4s68-MuiButtonBase-root"
-        style="width: 38%;"
-        tabindex="0"
-        type="button"
-      >
-        <div
-          class="MuiBox-root css-srx4r7"
-        />
-        <div
-          class="imageBackdrop css-myflv1"
-        />
-        <div
-          class="MuiBox-root css-1yrzk2j"
-        >
-          <h3
-            class="MuiTypography-root MuiTypography-h6 imageTitle css-1v7dj15-MuiTypography-root"
-          >
-            Gastronomy
-            <div
-              class="imageMarked"
-            />
-          </h3>
-        </div>
-        <span
-          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-        />
-      </button>
-      <button
-        class="MuiButtonBase-root css-17b4s68-MuiButtonBase-root"
         style="width: 24%;"
         tabindex="0"
         type="button"
       >
         <div
-          class="MuiBox-root css-fjbzwq"
+          class="MuiBox-root css-1wdjqgy"
         />
         <div
           class="imageBackdrop css-myflv1"
@@ -359,7 +376,7 @@ exports[`Application Should render the Application 1`] = `
           <h3
             class="MuiTypography-root MuiTypography-h6 imageTitle css-1v7dj15-MuiTypography-root"
           >
-            Shopping
+            Para todos los gustos y edades
             <div
               class="imageMarked"
             />
@@ -376,7 +393,7 @@ exports[`Application Should render the Application 1`] = `
         type="button"
       >
         <div
-          class="MuiBox-root css-33w2uq"
+          class="MuiBox-root css-1wdjqgy"
         />
         <div
           class="imageBackdrop css-myflv1"
@@ -387,7 +404,7 @@ exports[`Application Should render the Application 1`] = `
           <h3
             class="MuiTypography-root MuiTypography-h6 imageTitle css-1v7dj15-MuiTypography-root"
           >
-            Walking
+            Estilos Unicos
             <div
               class="imageMarked"
             />
@@ -399,12 +416,12 @@ exports[`Application Should render the Application 1`] = `
       </button>
       <button
         class="MuiButtonBase-root css-17b4s68-MuiButtonBase-root"
-        style="width: 20%;"
+        style="width: 28%;"
         tabindex="0"
         type="button"
       >
         <div
-          class="MuiBox-root css-115vbjq"
+          class="MuiBox-root css-1wdjqgy"
         />
         <div
           class="imageBackdrop css-myflv1"
@@ -415,35 +432,7 @@ exports[`Application Should render the Application 1`] = `
           <h3
             class="MuiTypography-root MuiTypography-h6 imageTitle css-1v7dj15-MuiTypography-root"
           >
-            Fitness
-            <div
-              class="imageMarked"
-            />
-          </h3>
-        </div>
-        <span
-          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-        />
-      </button>
-      <button
-        class="MuiButtonBase-root css-17b4s68-MuiButtonBase-root"
-        style="width: 40%;"
-        tabindex="0"
-        type="button"
-      >
-        <div
-          class="MuiBox-root css-1gw3le9"
-        />
-        <div
-          class="imageBackdrop css-myflv1"
-        />
-        <div
-          class="MuiBox-root css-1yrzk2j"
-        >
-          <h3
-            class="MuiTypography-root MuiTypography-h6 imageTitle css-1v7dj15-MuiTypography-root"
-          >
-            Reading
+            Y solamente para Ti
             <div
               class="imageMarked"
             />
@@ -464,7 +453,7 @@ exports[`Application Should render the Application 1`] = `
       <img
         alt="curvy lines"
         class="MuiBox-root css-17w9039"
-        src="/static/themes/onepirate/productCurvyLines.png"
+        src="productCurvyLines.png"
       />
       <h2
         class="MuiTypography-root MuiTypography-h4 css-1djlllf-MuiTypography-root"
@@ -476,82 +465,88 @@ exports[`Application Should render the Application 1`] = `
       </h2>
       <div>
         <div
-          class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 css-1ld3b9g-MuiGrid-root"
+          class="MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
         >
           <div
-            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-1lj5egr-MuiGrid-root"
+            class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 css-v9705b-MuiGrid-root"
           >
             <div
-              class="MuiBox-root css-19zp38f"
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-1lj5egr-MuiGrid-root"
             >
               <div
-                class="MuiBox-root css-sjgcuh"
+                class="MuiBox-root css-19zp38f"
               >
-                1.
+                <div
+                  class="MuiBox-root css-sjgcuh"
+                >
+                  0
+                  .
+                </div>
+                <img
+                  alt="This is some description for 0"
+                  class="MuiBox-root css-3ozjgl"
+                  src="https://source.unsplash.com/random"
+                />
+                <h3
+                  class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter css-1u420mm-MuiTypography-root"
+                >
+                  This is some description for 0
+                </h3>
               </div>
-              <img
-                alt="suitcase"
-                class="MuiBox-root css-gop4m4"
-                src="/static/themes/onepirate/productHowItWorks1.svg"
-              />
-              <h3
-                class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter css-1u420mm-MuiTypography-root"
-              >
-                Appointment every Wednesday 9am.
-              </h3>
             </div>
-          </div>
-          <div
-            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-1lj5egr-MuiGrid-root"
-          >
             <div
-              class="MuiBox-root css-19zp38f"
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-1lj5egr-MuiGrid-root"
             >
               <div
-                class="MuiBox-root css-sjgcuh"
+                class="MuiBox-root css-19zp38f"
               >
-                2.
+                <div
+                  class="MuiBox-root css-sjgcuh"
+                >
+                  1
+                  .
+                </div>
+                <img
+                  alt="This is some description for 1"
+                  class="MuiBox-root css-3ozjgl"
+                  src="https://source.unsplash.com/random"
+                />
+                <h3
+                  class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter css-1u420mm-MuiTypography-root"
+                >
+                  This is some description for 1
+                </h3>
               </div>
-              <img
-                alt="graph"
-                class="MuiBox-root css-gop4m4"
-                src="/static/themes/onepirate/productHowItWorks2.svg"
-              />
-              <h3
-                class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter css-1u420mm-MuiTypography-root"
-              >
-                First come, first served. Our offers are in limited quantities, so be quick.
-              </h3>
             </div>
-          </div>
-          <div
-            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-1lj5egr-MuiGrid-root"
-          >
             <div
-              class="MuiBox-root css-19zp38f"
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-1lj5egr-MuiGrid-root"
             >
               <div
-                class="MuiBox-root css-sjgcuh"
+                class="MuiBox-root css-19zp38f"
               >
-                3.
+                <div
+                  class="MuiBox-root css-sjgcuh"
+                >
+                  2
+                  .
+                </div>
+                <img
+                  alt="This is some description for 2"
+                  class="MuiBox-root css-3ozjgl"
+                  src="https://source.unsplash.com/random"
+                />
+                <h3
+                  class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter css-1u420mm-MuiTypography-root"
+                >
+                  This is some description for 2
+                </h3>
               </div>
-              <img
-                alt="clock"
-                class="MuiBox-root css-gop4m4"
-                src="/static/themes/onepirate/productHowItWorks3.svg"
-              />
-              <h3
-                class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter css-1u420mm-MuiTypography-root"
-              >
-                New offers every week. New experiences, new surprises. 
-                Your Sundays will no longer be alike.
-              </h3>
             </div>
           </div>
         </div>
       </div>
       <a
-        class="MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButtonBase-root css-1ngrfap-MuiButtonBase-root-MuiButton-root"
+        class="MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButtonBase-root css-187nt9k-MuiButtonBase-root-MuiButton-root"
         href="/premium-themes/onepirate/sign-up/"
         tabindex="0"
       >
@@ -580,12 +575,12 @@ exports[`Application Should render the Application 1`] = `
             <h2
               class="MuiTypography-root MuiTypography-h2 MuiTypography-gutterBottom css-3ccwe5-MuiTypography-root"
             >
-              Receive offers
+              Recibe nuestras ofertas
             </h2>
             <h3
               class="MuiTypography-root MuiTypography-h5 css-ksffm-MuiTypography-root"
             >
-              Taste the holidays of the everyday close to home.
+              No te quedes sin verte mas bella, suscribete a nuestras promociones.
             </h3>
             <div
               class="MuiFormControl-root MuiTextField-root css-1cyqbs2-MuiFormControl-root-MuiTextField-root"
@@ -597,7 +592,7 @@ exports[`Application Should render the Application 1`] = `
                   aria-invalid="false"
                   class="TextField-input-6 TextField-inputSizeMedium-10 MuiInput-input MuiInputBase-input css-1x51dt5-MuiInputBase-input-MuiInput-input"
                   id="mui-1"
-                  placeholder="Your email"
+                  placeholder="Tu correo electronico"
                   type="text"
                   value=""
                 />
@@ -608,7 +603,7 @@ exports[`Application Should render the Application 1`] = `
               tabindex="0"
               type="submit"
             >
-              Keep me updated
+              !Quiero recibir ofertas!
               <span
                 class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
               />
@@ -633,29 +628,30 @@ exports[`Application Should render the Application 1`] = `
   <section
     class="MuiContainer-root MuiContainer-maxWidthLg css-14iqigo-MuiContainer-root"
   >
-    <button
+    <a
       class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root  css-1tezyg3-MuiButtonBase-root-MuiButton-root"
+      href="https://wa.me/5219996035008"
       tabindex="0"
-      type="button"
+      target="_blank"
     >
       <span
         class="MuiTypography-root MuiTypography-h4 css-3udzj7-MuiTypography-root"
       >
-        Got any questions? Need help?
+        Tienes alguna duda? Necesitas ayuda?
       </span>
       <span
         class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
       />
-    </button>
+    </a>
     <h3
       class="MuiTypography-root MuiTypography-subtitle1 css-1qwanmj-MuiTypography-root"
     >
-      We are here to help. Get in touch!
+      Estamos aquí para ayudarte, !Contáctanos!
     </h3>
     <img
       alt="buoy"
       class="MuiBox-root css-q2ms4q"
-      src="/static/themes/onepirate/producBuoy.svg"
+      src="helpWanted.svg"
     />
   </section>
   <footer
@@ -678,20 +674,25 @@ exports[`Application Should render the Application 1`] = `
             >
               <a
                 class="MuiBox-root css-sh6kez"
-                href="https://mui.com/"
+                href="https://www.facebook.com/samyescobedoreyes"
+                target="_blank"
               >
                 <img
                   alt="Facebook"
-                  src="/static/themes/onepirate/appFooterFacebook.png"
+                  height="auto"
+                  src="facebookLogo.png"
+                  width="100%"
                 />
               </a>
               <a
                 class="MuiBox-root css-sh6kez"
-                href="https://twitter.com/MaterialUI"
+                href="https://instagram.com/lashairby"
               >
                 <img
-                  alt="Twitter"
-                  src="/static/themes/onepirate/appFooterTwitter.png"
+                  alt="Instagram"
+                  height="auto"
+                  src="instagramLogo.png"
+                  width="100%"
                 />
               </a>
             </div>
@@ -701,9 +702,10 @@ exports[`Application Should render the Application 1`] = `
               © 
               <a
                 class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1kgfegd-MuiTypography-root-MuiLink-root"
-                href="https://mui.com/"
+                href="https://lashairbysamy.com/"
+                target="_blank"
               >
-                Your Website
+                LashairBySamy
               </a>
                
               2022
@@ -711,7 +713,7 @@ exports[`Application Should render the Application 1`] = `
           </div>
         </div>
         <div
-          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 MuiGrid-grid-sm-4 MuiGrid-grid-md-2 css-m29i9t-MuiGrid-root"
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 MuiGrid-grid-sm-4 MuiGrid-grid-md-2 css-sd4llg-MuiGrid-root"
         >
           <h2
             class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-e3yg6t-MuiTypography-root"
@@ -747,7 +749,7 @@ exports[`Application Should render the Application 1`] = `
           </ul>
         </div>
         <div
-          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 MuiGrid-grid-sm-8 MuiGrid-grid-md-4 css-1lfyq01-MuiGrid-root"
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 MuiGrid-grid-sm-8 MuiGrid-grid-md-4 css-x7u1a5-MuiGrid-root"
         >
           <h2
             class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-e3yg6t-MuiTypography-root"
@@ -799,34 +801,7 @@ exports[`Application Should render the Application 1`] = `
           <span
             class="MuiTypography-root MuiTypography-caption css-ww6t1e-MuiTypography-root"
           >
-            Icons made by 
-            <a
-              class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-vni9fj-MuiTypography-root-MuiLink-root"
-              href="https://www.freepik.com"
-              rel="sponsored"
-              title="Freepik"
-            >
-              Freepik
-            </a>
-             from 
-            <a
-              class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-vni9fj-MuiTypography-root-MuiLink-root"
-              href="https://www.flaticon.com"
-              rel="sponsored"
-              title="Flaticon"
-            >
-              www.flaticon.com
-            </a>
-             is licensed by 
-            <a
-              class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-vni9fj-MuiTypography-root-MuiLink-root"
-              href="https://creativecommons.org/licenses/by/3.0/"
-              rel="noopener noreferrer"
-              target="_blank"
-              title="Creative Commons BY 3.0"
-            >
-              CC 3.0 BY
-            </a>
+            Visita nuestra redes sociales, dando click a los iconos de arriba
           </span>
         </div>
       </div>

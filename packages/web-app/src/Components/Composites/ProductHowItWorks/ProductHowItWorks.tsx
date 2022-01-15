@@ -1,10 +1,12 @@
 import * as React from 'react';
-import { Theme } from '@mui/material/styles';
+import { Theme, useTheme } from '@mui/material/styles';
 import { SxProps } from '@mui/system';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import { Button, Typography } from 'Components/Blocks';
+import { ProductStep } from '@mchanc/shared-library';
+import productCurvyLines from 'Images/productCurvyLines.png';
 
 const item: SxProps<Theme> = {
   display: 'flex',
@@ -25,7 +27,70 @@ const image = {
   my: 4,
 };
 
-function ProductHowItWorks() {
+export interface ProductHowItWorksProps {
+  productSteps: ProductStep[];
+}
+
+const ProductHowItWorks: React.FunctionComponent<ProductHowItWorksProps> = ({
+  productSteps,
+}) => {
+
+  const currentTheme = useTheme();
+
+  const MAX_NUMBER_OF_ELEMENTS_PER_ROW = 3;
+
+  const renderProductSteps = (): React.ReactNode => {
+    const maxNumberOfRows = Math.ceil(productSteps.length / MAX_NUMBER_OF_ELEMENTS_PER_ROW);
+    const gridsToDisplay = [];
+    for (let i = 0; i < maxNumberOfRows; i++) {
+      const currentRows: any[] = [];
+      for (let j = 0; j < MAX_NUMBER_OF_ELEMENTS_PER_ROW; j++) {
+        const index: number = i * MAX_NUMBER_OF_ELEMENTS_PER_ROW + j;
+        const currentProductValue = productSteps[index];
+        const gridSection = renderGridSection(currentProductValue, index);
+        currentRows.push(gridSection);
+      }
+      const gridSection = renderGridContainer(currentRows, i + 1);
+      gridsToDisplay.push(gridSection);
+    }
+
+    return (
+      <Grid container>
+        {gridsToDisplay}
+      </Grid>
+    );
+  }
+
+  const renderGridSection = (productStep: ProductStep, containerId: number): React.ReactNode => (
+    <Grid item xs={12} md={4} key={`how-it-works-section-${containerId}`}>
+      <Box sx={item}>
+        <Box sx={number}>{productStep.stepNumber}.</Box>
+          <Box
+            component="img"
+            src={productStep.stepImage}
+            alt={productStep.stepDescription}
+            height='auto'
+            width='100%'
+            sx={image}
+          />
+          <Typography variant="h5" align="center">
+            {productStep.stepDescription}
+          </Typography>
+      </Box>
+    </Grid>
+  );
+
+  const renderGridContainer = (children: React.ReactNode, containerId: number): React.ReactNode => (
+    <Grid 
+      container 
+      spacing={5} 
+      sx={{marginBottom: currentTheme.spacing(5)}}
+      key={`how-it-works-row-id-${containerId}`}
+    >
+      {children}
+    </Grid>
+  );
+
   return (
     <Box
       component="section"
@@ -43,7 +108,7 @@ function ProductHowItWorks() {
       >
         <Box
           component="img"
-          src="/static/themes/onepirate/productCurvyLines.png"
+          src={productCurvyLines}
           alt="curvy lines"
           sx={{
             pointerEvents: 'none',
@@ -56,52 +121,7 @@ function ProductHowItWorks() {
           How it works
         </Typography>
         <div>
-          <Grid container spacing={5}>
-            <Grid item xs={12} md={4}>
-              <Box sx={item}>
-                <Box sx={number}>1.</Box>
-                <Box
-                  component="img"
-                  src="/static/themes/onepirate/productHowItWorks1.svg"
-                  alt="suitcase"
-                  sx={image}
-                />
-                <Typography variant="h5" align="center">
-                  Appointment every Wednesday 9am.
-                </Typography>
-              </Box>
-            </Grid>
-            <Grid item xs={12} md={4}>
-              <Box sx={item}>
-                <Box sx={number}>2.</Box>
-                <Box
-                  component="img"
-                  src="/static/themes/onepirate/productHowItWorks2.svg"
-                  alt="graph"
-                  sx={image}
-                />
-                <Typography variant="h5" align="center">
-                  First come, first served. Our offers are in limited quantities, so
-                  be quick.
-                </Typography>
-              </Box>
-            </Grid>
-            <Grid item xs={12} md={4}>
-              <Box sx={item}>
-                <Box sx={number}>3.</Box>
-                <Box
-                  component="img"
-                  src="/static/themes/onepirate/productHowItWorks3.svg"
-                  alt="clock"
-                  sx={image}
-                />
-                <Typography variant="h5" align="center">
-                  {'New offers every week. New experiences, new surprises. '}
-                  {'Your Sundays will no longer be alike.'}
-                </Typography>
-              </Box>
-            </Grid>
-          </Grid>
+          {renderProductSteps()}
         </div>
         <Button
           color="secondary"
@@ -109,7 +129,7 @@ function ProductHowItWorks() {
           variant="contained"
           component="a"
           href="/premium-themes/onepirate/sign-up/"
-          sx={{ mt: 8 }}
+          sx={{ mt: 8, visibility: 'hidden' }}
         >
           Get started
         </Button>

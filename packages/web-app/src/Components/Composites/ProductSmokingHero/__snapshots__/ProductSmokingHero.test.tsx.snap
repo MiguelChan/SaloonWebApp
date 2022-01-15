@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductSmokingHero Should match snapshot 1`] = `
+<div>
+  <section
+    class="MuiContainer-root MuiContainer-maxWidthLg css-14iqigo-MuiContainer-root"
+  >
+    <a
+      class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root  css-10c5xe0-MuiButtonBase-root-MuiButton-root"
+      href="https://wa.me/5219996035008"
+      tabindex="0"
+      target="_blank"
+    >
+      <span
+        class="MuiTypography-root MuiTypography-h4 css-5lbw0b-MuiTypography-root"
+      >
+        Tienes alguna duda? Necesitas ayuda?
+      </span>
+      <span
+        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+      />
+    </a>
+    <h3
+      class="MuiTypography-root MuiTypography-subtitle1 css-1t5ttap-MuiTypography-root"
+    >
+      Estamos aquí para ayudarte, !Contáctanos!
+    </h3>
+    <img
+      alt="buoy"
+      class="MuiBox-root css-q2ms4q"
+      src="helpWanted.svg"
+    />
+  </section>
+</div>
+`;

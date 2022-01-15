@@ -2,10 +2,19 @@ import { Typography, Button } from 'Components/Blocks';
 import * as React from 'react';
 import { ProductHeroLayout } from 'Components/Composites';
 
-const backgroundImage =
-  'https://images.unsplash.com/photo-1534854638093-bada1813ca19?auto=format&fit=crop&w=1400&q=80';
+export interface ProductHeroProps {
+  backgroundImage: string;
+}
 
-export default function ProductHero() {
+/**
+ * Defines the ProductHero Component. Within this component we can explain a little bit more of the Services
+ * offered by the Saloon.
+ * 
+ * @returns {JSX.Element} The ProductHero Component.
+ */
+const ProductHero: React.FunctionComponent<ProductHeroProps> = ({
+  backgroundImage,
+}) => {
   return (
     <ProductHeroLayout
       sxBackground={{
@@ -21,7 +30,7 @@ export default function ProductHero() {
         alt="increase priority"
       />
       <Typography color="inherit" align="center" variant="h2" marked="center">
-        Upgrade your Sundays
+        Lleva tu belleza aun mas lejos
       </Typography>
       <Typography
         color="inherit"
@@ -29,7 +38,7 @@ export default function ProductHero() {
         variant="h5"
         sx={{ mb: 4, mt: { sx: 4, sm: 10 } }}
       >
-        Enjoy secret offers up to -70% off the best luxury hotels every Sunday.
+        Disfruta de nuestros atractivos servicios
       </Typography>
       <Button
         color="secondary"
@@ -37,13 +46,15 @@ export default function ProductHero() {
         size="large"
         component="a"
         href="/premium-themes/onepirate/sign-up/"
-        sx={{ minWidth: 200 }}
+        sx={{ minWidth: 200, visibility: 'hidden' }}
       >
-        Register
+        Registrarse
       </Button>
       <Typography variant="body2" color="inherit" sx={{ mt: 2 }}>
-        Discover the experience
+        Descubre la experiencia con Samy
       </Typography>
     </ProductHeroLayout>
   );
 }
+
+export default ProductHero;
