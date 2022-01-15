@@ -1,0 +1,159 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppFooter Should display the AppFooter 1`] = `
+<div>
+  <footer
+    class="MuiTypography-root MuiTypography-body1 css-gt3tvs-MuiTypography-root"
+  >
+    <div
+      class="MuiContainer-root MuiContainer-maxWidthLg css-1wu66hi-MuiContainer-root"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 css-1ld3b9g-MuiGrid-root"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 MuiGrid-grid-sm-4 MuiGrid-grid-md-3 css-1vm8tgf-MuiGrid-root"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 MuiGrid-direction-xs-column css-1532ovy-MuiGrid-root"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item css-15zuw48-MuiGrid-root"
+            >
+              <a
+                class="MuiBox-root css-sh6kez"
+                href="https://www.facebook.com/samyescobedoreyes"
+                target="_blank"
+              >
+                <img
+                  alt="Facebook"
+                  height="auto"
+                  src="facebookLogo.png"
+                  width="100%"
+                />
+              </a>
+              <a
+                class="MuiBox-root css-sh6kez"
+                href="https://instagram.com/lashairby"
+              >
+                <img
+                  alt="Instagram"
+                  height="auto"
+                  src="instagramLogo.png"
+                  width="100%"
+                />
+              </a>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+            >
+              © 
+              <a
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1kgfegd-MuiTypography-root-MuiLink-root"
+                href="https://lashairbysamy.com/"
+                target="_blank"
+              >
+                LashairBySamy
+              </a>
+               
+              2022
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 MuiGrid-grid-sm-4 MuiGrid-grid-md-2 css-sd4llg-MuiGrid-root"
+        >
+          <h2
+            class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-18k87ye-MuiTypography-root"
+          >
+            Legal
+            <span
+              class="Typography-markedH6Left-4"
+            />
+          </h2>
+          <ul
+            class="MuiBox-root css-19brutj"
+          >
+            <li
+              class="MuiBox-root css-mz9qt7"
+            >
+              <a
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1iwtne7-MuiTypography-root-MuiLink-root"
+                href="/premium-themes/onepirate/terms/"
+              >
+                Terms
+              </a>
+            </li>
+            <li
+              class="MuiBox-root css-mz9qt7"
+            >
+              <a
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1iwtne7-MuiTypography-root-MuiLink-root"
+                href="/premium-themes/onepirate/privacy/"
+              >
+                Privacy
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 MuiGrid-grid-sm-8 MuiGrid-grid-md-4 css-x7u1a5-MuiGrid-root"
+        >
+          <h2
+            class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-18k87ye-MuiTypography-root"
+          >
+            Language
+            <span
+              class="Typography-markedH6Left-4"
+            />
+          </h2>
+          <div
+            class="MuiFormControl-root MuiTextField-root css-8icdyj-MuiFormControl-root-MuiTextField-root"
+          >
+            <div
+              class="TextField-root-5 MuiInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl css-1aa5qj0-MuiInputBase-root-MuiInput-root"
+            >
+              <select
+                aria-invalid="false"
+                class="TextField-select-14 MuiNativeSelect-select MuiNativeSelect-standard TextField-input-6 TextField-inputSizeMedium-10 TextField-inputBorder-7 MuiInput-input MuiInputBase-input css-1dmqq7i-MuiNativeSelect-select-MuiInputBase-input-MuiInput-input"
+                id="mui-1"
+              >
+                <option
+                  value="en-US"
+                >
+                  English
+                </option>
+                <option
+                  value="fr-FR"
+                >
+                  Français
+                </option>
+              </select>
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium TextField-selectIcon-15 MuiNativeSelect-icon MuiNativeSelect-iconStandard css-10bey84-MuiSvgIcon-root-MuiNativeSelect-icon"
+                data-testid="ArrowDropDownIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7 10l5 5 5-5z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+        >
+          <span
+            class="MuiTypography-root MuiTypography-caption css-1sn4lm3-MuiTypography-root"
+          >
+            Visita nuestra redes sociales, dando click a los iconos de arriba
+          </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+`;

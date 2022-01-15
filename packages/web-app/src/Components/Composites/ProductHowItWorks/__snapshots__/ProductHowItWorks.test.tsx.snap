@@ -1,0 +1,119 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductHowItWorks Should match the Snapshot 1`] = `
+<div>
+  <section
+    class="MuiBox-root css-1lv7ehy"
+  >
+    <div
+      class="MuiContainer-root MuiContainer-maxWidthLg css-1llydmb-MuiContainer-root"
+    >
+      <img
+        alt="curvy lines"
+        class="MuiBox-root css-17w9039"
+        src="productCurvyLines.png"
+      />
+      <h2
+        class="MuiTypography-root MuiTypography-h4 css-1amj3j2-MuiTypography-root"
+      >
+        How it works
+        <span
+          class="Typography-markedH4Center-3"
+        />
+      </h2>
+      <div>
+        <div
+          class="MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 css-v9705b-MuiGrid-root"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-1lj5egr-MuiGrid-root"
+            >
+              <div
+                class="MuiBox-root css-19zp38f"
+              >
+                <div
+                  class="MuiBox-root css-sjgcuh"
+                >
+                  0
+                  .
+                </div>
+                <img
+                  alt="This is some description for 0"
+                  class="MuiBox-root css-3ozjgl"
+                  src="https://source.unsplash.com/random"
+                />
+                <h3
+                  class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter css-ph2xsj-MuiTypography-root"
+                >
+                  This is some description for 0
+                </h3>
+              </div>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-1lj5egr-MuiGrid-root"
+            >
+              <div
+                class="MuiBox-root css-19zp38f"
+              >
+                <div
+                  class="MuiBox-root css-sjgcuh"
+                >
+                  1
+                  .
+                </div>
+                <img
+                  alt="This is some description for 1"
+                  class="MuiBox-root css-3ozjgl"
+                  src="https://source.unsplash.com/random"
+                />
+                <h3
+                  class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter css-ph2xsj-MuiTypography-root"
+                >
+                  This is some description for 1
+                </h3>
+              </div>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-1lj5egr-MuiGrid-root"
+            >
+              <div
+                class="MuiBox-root css-19zp38f"
+              >
+                <div
+                  class="MuiBox-root css-sjgcuh"
+                >
+                  2
+                  .
+                </div>
+                <img
+                  alt="This is some description for 2"
+                  class="MuiBox-root css-3ozjgl"
+                  src="https://source.unsplash.com/random"
+                />
+                <h3
+                  class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter css-ph2xsj-MuiTypography-root"
+                >
+                  This is some description for 2
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a
+        class="MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButtonBase-root css-q34hpo-MuiButtonBase-root-MuiButton-root"
+        href="/premium-themes/onepirate/sign-up/"
+        tabindex="0"
+      >
+        Get started
+        <span
+          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+        />
+      </a>
+    </div>
+  </section>
+</div>
+`;

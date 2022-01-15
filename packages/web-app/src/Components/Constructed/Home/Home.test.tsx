@@ -1,6 +1,5 @@
 import {
   render,
-  RenderResult,
 } from '@testing-library/react';
 import Home from './Home';
 

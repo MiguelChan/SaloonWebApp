@@ -4,6 +4,11 @@ import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import { Typography, TextField, Button, Snackbar } from 'Components/Blocks';
 
+/**
+ * Defines the Product "Call To Action" Component. Within this component, Users should be able to subscribe
+ * to the newsletter or to promotions via email.
+ * @returns 
+ */
 function ProductCTA() {
   const [open, setOpen] = React.useState(false);
 
@@ -31,14 +36,14 @@ function ProductCTA() {
           >
             <Box component="form" onSubmit={handleSubmit} sx={{ maxWidth: 400 }}>
               <Typography variant="h2" component="h2" gutterBottom>
-                Receive offers
+                Recibe nuestras ofertas
               </Typography>
               <Typography variant="h5">
-                Taste the holidays of the everyday close to home.
+                No te quedes sin verte mas bella, suscribete a nuestras promociones.
               </Typography>
               <TextField
                 noBorder
-                placeholder="Your email"
+                placeholder="Tu correo electronico"
                 variant="standard"
                 sx={{ width: '100%', mt: 3, mb: 2 }}
               />
@@ -48,7 +53,7 @@ function ProductCTA() {
                 variant="contained"
                 sx={{ width: '100%' }}
               >
-                Keep me updated
+                {'!Quiero recibir ofertas!'}
               </Button>
             </Box>
           </Box>
@@ -89,7 +94,7 @@ function ProductCTA() {
       <Snackbar
         open={open}
         closeFunc={handleClose}
-        message="We will send you our best offers, once a week."
+        message="Recibiras un correo, informandote de nuestras ofertas y promociones exclusivas."
       />
     </Container>
   );

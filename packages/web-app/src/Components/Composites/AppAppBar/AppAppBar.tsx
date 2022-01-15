@@ -24,7 +24,7 @@ function AppAppBar() {
           >
             {'Lashair by Samy'}
           </Link>
-          <Box sx={{ flex: 1, display: 'flex', justifyContent: 'flex-end' }}>
+          <Box sx={{ flex: 1, display: 'flex', justifyContent: 'flex-end' }} visibility='hidden'>
             <Link
               color="inherit"
               variant="h6"

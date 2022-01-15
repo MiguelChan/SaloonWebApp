@@ -4,9 +4,6 @@ import {
   Meta,
 } from '@storybook/react';
 import AppAppBar from './AppAppBar';
-import { ThemeProvider } from '@mui/material/styles';
-import { theme } from 'Utils';
-import { CssBaseline } from '@mui/material';
 
 export default {
   title: 'Components/Composites/AppAppBar',

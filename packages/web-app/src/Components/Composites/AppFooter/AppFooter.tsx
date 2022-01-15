@@ -3,14 +3,16 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Link from '@mui/material/Link';
 import Container from '@mui/material/Container';
+import facebookLogo from 'Images/facebookLogo.png';
+import instagramLogo from 'Images/instagramLogo.png';
 import { Typography, TextField } from 'Components/Blocks';
 
 function Copyright() {
   return (
     <React.Fragment>
       {'© '}
-      <Link color="inherit" href="https://mui.com/">
-        Your Website
+      <Link color="inherit" href="https://lashairbysamy.com/" target='_blank'>
+        LashairBySamy
       </Link>{' '}
       {new Date().getFullYear()}
     </React.Fragment>
@@ -58,20 +60,24 @@ export default function AppFooter() {
               sx={{ height: 120 }}
             >
               <Grid item sx={{ display: 'flex' }}>
-                <Box component="a" href="https://mui.com/" sx={iconStyle}>
+                <Box component="a" href="https://www.facebook.com/samyescobedoreyes" sx={iconStyle} target='_blank'>
                   <img
-                    src="/static/themes/onepirate/appFooterFacebook.png"
-                    alt="Facebook"
+                    src={facebookLogo}
+                    alt='Facebook'
+                    width='100%'
+                    height='auto'
                   />
                 </Box>
                 <Box
                   component="a"
-                  href="https://twitter.com/MaterialUI"
+                  href="https://instagram.com/lashairby"
                   sx={iconStyle}
                 >
                   <img
-                    src="/static/themes/onepirate/appFooterTwitter.png"
-                    alt="Twitter"
+                    src={instagramLogo}
+                    alt="Instagram"
+                    width='100%'
+                    height='auto'
                   />
                 </Box>
               </Grid>
@@ -80,7 +86,7 @@ export default function AppFooter() {
               </Grid>
             </Grid>
           </Grid>
-          <Grid item xs={6} sm={4} md={2}>
+          <Grid item xs={6} sm={4} md={2} visibility='hidden'>
             <Typography variant="h6" marked="left" gutterBottom>
               Legal
             </Typography>
@@ -93,7 +99,7 @@ export default function AppFooter() {
               </Box>
             </Box>
           </Grid>
-          <Grid item xs={6} sm={8} md={4}>
+          <Grid item xs={6} sm={8} md={4} visibility='hidden'>
             <Typography variant="h6" marked="left" gutterBottom>
               Language
             </Typography>
@@ -115,23 +121,7 @@ export default function AppFooter() {
           </Grid>
           <Grid item>
             <Typography variant="caption">
-              {'Icons made by '}
-              <Link href="https://www.freepik.com" rel="sponsored" title="Freepik">
-                Freepik
-              </Link>
-              {' from '}
-              <Link href="https://www.flaticon.com" rel="sponsored" title="Flaticon">
-                www.flaticon.com
-              </Link>
-              {' is licensed by '}
-              <Link
-                href="https://creativecommons.org/licenses/by/3.0/"
-                title="Creative Commons BY 3.0"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                CC 3.0 BY
-              </Link>
+              {'Visita nuestra redes sociales, dando click a los iconos de arriba'}
             </Typography>
           </Grid>
         </Grid>
